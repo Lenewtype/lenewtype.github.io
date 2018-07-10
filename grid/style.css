@@ -1,0 +1,177 @@
+/*  *  *  *  *  *  *  *\
+|*  Global Variables  *|
+\*  *  *  *  *  *  *  */
+:root {
+	--ash: #343434;
+	--charcoal: #373737;
+	--paper: #fafafa;
+	--pale-gold: #c0b283;
+	--silk: #dcd0c0;
+	box-sizing: border-box;
+}
+
+/*  *  *  *  *  *\
+|* Page Styles  *|
+\*  *  *  *  *  */
+
+body{
+	background-color: var(--paper);
+	color: var(--ash);
+	font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+	color: var(--pale-gold);
+	font-family: 'Fjalla One', sans-serif;
+	margin-bottom: 20px;
+}
+
+.title-wrap::after {
+	background: linear-gradient(to right, var(--pale-gold), var(--paper)) ;
+	content: '';
+	display: block;
+	height: 2px;
+	position: relative;
+	top: -15px;
+	width: 45%;
+}
+
+section + section {
+	margin-top: 50px;
+}
+
+/*  *  *  *  *  *  *\
+|*   Generic Grid  *|
+\*  *  *  *  *  *  */
+
+.grid-container{
+	background-color: var(--charcoal);
+	display: grid;
+	grid-gap: 7px 5px;
+	grid-template-columns: auto auto auto;
+	padding: 8px;
+}
+
+.grid-container > div{
+	background-color: var(--silk);
+	border: 1px solid var(--charcoal);
+	font-size: 25px;
+	padding: 25px;
+	text-align: center;
+}
+
+/*  *  *  *  *  *\
+|*  Grid Lines  *|
+\*  *  *  *  *  */
+ 
+#grid-lines .item-1 {
+	grid-row-start: 1;
+	grid-row-end: 4;
+}
+
+#grid-lines .item-2 {
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+
+#grid-lines .item-6 {
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+/*  *  *  *  *  *  *  *  *  *  *\
+|*  Grid Template Cols / Rows  *|
+\*  *  *  *  *  *  *  *  *  *  */
+
+
+#grid-template-cols .grid-container {
+	grid-template-columns: 80px 299px auto 50px;
+	grid-template-rows: auto 350px 90px;
+}
+
+#grid-template-cols .grid-container > div {
+	padding: 10px;
+}
+
+/*  *  *  *  *  *\
+|* Grid Justify *|
+\*  *  *  *  *  */
+
+#grid-justify .grid-container-1 {
+	grid-template-columns: 200px 200px 200px;
+	justify-content: space-evenly;
+}
+
+#grid-justify .grid-container-2 {
+	grid-template-columns: 300px 80px 300px;
+	justify-content: space-around;
+}
+
+#grid-justify .grid-container-3, #grid-justify .grid-container-4, #grid-justify .grid-container-5 {
+	grid-template-columns: 200px 200px 200px;
+	justify-content: center;
+}
+
+#grid-justify .grid-container-4 {
+	justify-content: start;
+}
+
+#grid-justify .grid-container-5 {
+	justify-content: end;
+}
+
+/*  *  *  *  *\
+|* Grid Area *|
+\*  *  *  *  */
+
+#grid-area .grid-container {
+	grid-template-rows: 90px 180px 90px;
+}
+
+
+#grid-area .item-1 {
+	grid-area: 1 / 1 / 2 / 5;
+}
+
+#grid-area .item-2 {
+	grid-area: 2 / 3 / span 2 / span 2;
+}
+
+#grid-area .item-3 {
+	grid-area: 2 / 1 / span 1 / span 2;
+}
+
+#grid-area .item-4 {
+	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+/*  *  *  *  *  *  *\
+|* Named Grid Area *|
+\*  *  *  *  *  *  */
+
+#grid-names .grid-container {
+	grid-template-areas:
+	'jim jim jim jim jim'
+	'iori iori meaghaanhe meaghaanhe meaghaanhe'
+	'iori iori sartuk sartuk sartuk';
+}
+
+#grid-names .item-1 {
+	grid-area: jim;
+}
+
+#grid-names .item-2 {
+	grid-area: sartuk;
+}
+
+#grid-names .item-3 {
+	grid-area: meaghaanhe;
+}
+
+#grid-names .item-4 {
+	grid-area: iori;
+}
+
+
