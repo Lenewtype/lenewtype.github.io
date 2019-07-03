@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7967c3f4.chunk.css",
-    "main.js": "/static/js/main.5e58ed72.chunk.js",
-    "main.js.map": "/static/js/main.5e58ed72.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.c2695c00.chunk.js": "/static/js/2.c2695c00.chunk.js",
-    "static/js/2.c2695c00.chunk.js.map": "/static/js/2.c2695c00.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.9523dd5869cf8cb8ca075f5a247b0a48.js": "/precache-manifest.9523dd5869cf8cb8ca075f5a247b0a48.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.7967c3f4.chunk.css.map": "/static/css/main.7967c3f4.chunk.css.map"
+    "main.css": "/cardFlip/static/css/main.7967c3f4.chunk.css",
+    "main.js": "/cardFlip/static/js/main.07fd4230.chunk.js",
+    "main.js.map": "/cardFlip/static/js/main.07fd4230.chunk.js.map",
+    "runtime~main.js": "/cardFlip/static/js/runtime~main.cdfc182e.js",
+    "runtime~main.js.map": "/cardFlip/static/js/runtime~main.cdfc182e.js.map",
+    "static/js/2.c2695c00.chunk.js": "/cardFlip/static/js/2.c2695c00.chunk.js",
+    "static/js/2.c2695c00.chunk.js.map": "/cardFlip/static/js/2.c2695c00.chunk.js.map",
+    "index.html": "/cardFlip/index.html",
+    "precache-manifest.ed00cb95b1c6ecd15b4b37b780d51fc7.js": "/cardFlip/precache-manifest.ed00cb95b1c6ecd15b4b37b780d51fc7.js",
+    "service-worker.js": "/cardFlip/service-worker.js",
+    "static/css/main.7967c3f4.chunk.css.map": "/cardFlip/static/css/main.7967c3f4.chunk.css.map"
   }
 }
